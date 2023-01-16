@@ -1,0 +1,456 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Copperplate';
+    src: url(/font/copperplate/OPTICopperplate.otf);
+}
+@font-face {
+    font-family: 'Copperplate Light';
+    src: url(/font/copperplate/OPTICopperplate-Light.otf);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(/pictures/music-img.png);
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-family: Copperplate;
+    transition: 0.4s ease-in-out;
+    object-fit: cover;
+}
+
+/* .navi-bar {
+    position: relative;
+} */
+
+.hero-wrapper {
+    display: block;
+}
+.about-me-container {
+    display: none;
+}
+.contact-me-container {
+    display: none;
+}
+.my-music-container {
+    display: none;
+}
+
+.logo-container {
+    width: 200px;
+    position: absolute;
+    top: 4vh;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.logo {
+    width: 100%;
+    min-height: 7vh;
+    background-image: url(/pictures/logo.png);
+    /* position: absolute;
+    top: 4vh;
+    left: 50%;
+    transform: translate(-50%); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.navi-buttons {
+    position: absolute;
+    bottom: 8vh;
+    left: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navi-button {
+    min-width: 10rem;
+    min-height: 3rem;
+    background: none;
+    border: solid 2px white;
+    color: white;
+    font-size: .55rem;
+    font-family: Copperplate;
+    cursor: pointer;
+}
+
+.button-active{
+    background-color: #A487E5;
+    border: none;
+}
+
+.social-buttons {
+    position: absolute;
+    bottom: 8vh;
+    right: 8vw;
+    gap: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.social-icon-container {
+cursor: pointer;
+display: flex;
+justify-content: center;
+min-width: 2.6rem;
+}
+
+.social-icon {
+    width: 100%;
+}
+
+
+
+.hero-wrapper {
+    position: absolute;
+    /* top: 30vh; */
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.hero-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1vh;
+    transition-property: all;
+    transition-timing-function: ease-in;
+    transition-delay: 1s
+}
+
+.music-out-text {
+    font-size: .7rem;
+    white-space: nowrap;
+    /* color: white; */
+    font-weight: 100;
+    font-family: Copperplate Light;
+    letter-spacing: 1px;
+    background-color: #E5E5E5;
+    color: #000;
+    padding: 4px 24px;
+}
+
+.song-title {
+    white-space: nowrap;
+    color: #C6B9E3;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+
+}
+
+.listen-here-btn {
+    min-width: 36vw;
+    width: 100%;
+    max-width: 200px;
+    min-height: 5vh;
+    border: solid 1px white;
+    color: white;
+    font-size: .55rem;
+    font-family: Copperplate;
+    letter-spacing: 4px;
+    background: none;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+/* .listen-here-btn:hover{
+    background-color: #A487E5;
+    border: none;
+    transition: .2s ease-in-out;
+} */
+
+
+
+/*
+
+About me section
+
+*/
+
+
+.about-me-bio {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    /* border: #E5E5E5 0.1px solid; */
+    /* background-color: #E5E5E5; */
+    backdrop-filter: 10;
+    /* padding: 3vh 1vw; */
+    color: white;
+}
+
+.about-my-story {
+    /* color: #575757; */
+    font-size: 1.2rem;
+    margin-bottom: 2vh;
+}
+
+.about-me-bio-text {
+    /* font-family: Copperplate Light; */
+    /* color: #E5E5E5; */
+    /* color: #828282; */
+    /* color: #a7a7a7;
+    font-weight: 100;
+    font-size: .65rem;
+    letter-spacing: 2px; */
+
+    font-size: .7rem;
+    /* color: white; */
+    font-weight: 100;
+    font-family: Copperplate Light;
+    letter-spacing: 1px;
+    background-color: #E5E5E5;
+    color: #000;
+    padding: 4px 24px;
+}
+
+/*
+
+Contact Me
+
+*/
+
+/* .contact-me-container { 
+
+} */
+
+.contact-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    gap: 1vh;
+    color: white;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    /* color: #575757; */
+    margin-bottom: 2vh;
+}
+
+.contact-mail {
+
+    /* font-family: Copperplate Light;
+    color: #a7a7a7;
+    font-weight: 100;
+    font-size: .8rem;
+    letter-spacing: 4px; */
+
+    font-size: .7rem;
+    white-space: nowrap;
+    /* color: white; */
+    font-weight: 100;
+    font-family: Copperplate Light;
+    letter-spacing: 1px;
+    background-color: #E5E5E5;
+    color: #000;
+    padding: 4px 24px;
+}
+
+/*
+
+MY MUSIC SECTION
+
+*/
+/* .video-content{
+
+} */
+
+.slide-container, .swiper{
+    position: relative;
+    top: 20rem;
+    right: 0;
+    max-width: 80%;
+    background-color: #A487E5;
+}
+.slide-content{
+    max-width: 80rem;
+}
+
+.card-video{
+    height: 100%;
+    object-fit: cover;
+}
+.card{
+    width: 100%;
+}
+.video-content{
+    /* width: 20rem; */
+}
+.video-frame{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+
+
+@media(min-width: 1100px){
+    .song-title {
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+    .music-out-text {
+        font-size: .8rem;
+    }
+    .about-my-story {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+    .about-me-bio-text {
+        font-size: 1rem;
+    }
+    .about-me-bio {
+        width: 600px;
+    }
+    .contact-container {
+        width: 600px;
+    }
+    .contact-text {
+        font-size: 2rem;
+        margin-bottom: 2vh;
+    }
+    .contact-mail {
+        font-size: 1rem;
+    }
+
+    .navi-button {
+    font-size: .8rem;
+    opacity: 60%;
+    min-width: 12rem;
+    min-height: 4rem;
+    width: 100%;
+    }    
+    .social-buttons {
+    gap: 2vw;
+    flex-direction: row;
+    }
+}
+
+
+@media(min-width: 1500px){
+    .social-buttons {
+        gap: 2vw;
+        flex-direction: row;
+    }
+    .navi-button {
+    font-size: .8rem;
+    opacity: 60%;
+        min-width: 12rem;
+        min-height: 4rem;
+        width: 100%;
+        /* max-width: 40vw; */
+        /* max-height: 12vh; */
+    }
+    .button-active{
+        opacity: 100%;
+    }
+    .navi-buttons{
+        gap: 5rem;
+    }
+    .navi-button{
+        width: 20vw;
+    }
+    .navi-button:hover{
+        opacity: 100%;
+        background-color: #A487E5;
+        transition: .2s ease-in-out;
+        border: none;
+        font-size: 1rem;
+    }
+    .listen-here-btn{
+            font-size: .8rem;
+    }
+    .song-title {
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+    .music-out-text {
+        font-size: 1rem;
+    }
+    .listen-here-btn:hover{
+        background-color: #A487E5;
+        border: none;
+        font-size: .9rem;
+        transition: .2s ease-in-out;
+    }
+    .social-icon {
+        opacity: 60%;
+        width: 2vw;
+        min-width: 3rem;
+    }
+
+    .social-icon:hover {
+        opacity: 100%;
+    }
+
+    .hero-wrapper, .about-me-bio, .contact-container {
+        top: 50%;
+        /* top: 40vh; */
+        left: 70%;
+        /* top: 40vh; */
+        transform: translate(-50%, -70%);
+    }
+    
+}
+
+@media(min-width: 2000px){
+    .navi-button{
+        width: 24vw;
+        height: 10vh;
+    }
+}
+
+.linear-container-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgb(0, 0, 0, 100%), rgba(0, 0, 0, 0));
+    height: 15vh;
+    z-index: -1;
+    width: 100%;
+}
+.linear-container-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgb(0, 0, 0, 0), rgba(0, 0, 0, 100%));
+    height: 15vh;
+    z-index: -1;
+    width: 100%;
+}
